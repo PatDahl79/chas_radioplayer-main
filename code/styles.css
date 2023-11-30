@@ -1,22 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">  <!-- "en" för engelska. Om man vill t.ex. svenska använder "sv"-->
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Radio Player</title>
-  </head>
-
-  <body>
-
-    <h1>Radio Channels</h1>
-    <script src="radioplayer.js"></script>
-    <div id="channels"></div>
-
-    <!--Att skriva HTML, JavaScript och CSS i en enda fil är lämpligt för mindre projekt eller snabba prototyper . 
-    I större projekt är det lättare att ha separata filer för att det ska bli läsa, förstå och underhålla.-->
-  <style>
-  body {
-    font-family: Arial, sans-serif;
+body {
+  font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     justify-content: center;
@@ -68,7 +51,3 @@
     color: #333;
     width: 90%;
   }
-  </style>
-
-</body>
-</html>

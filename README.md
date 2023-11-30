@@ -31,14 +31,34 @@ Check out the [documentation](https://www.w3schools.com/tags/tag_audio.asp) for 
 Give answers in swedish to the following questions in a text-file in your repo:
 
 1. What is OWASP and what is its primary mission as described in the article?
+Savr:
+OWASP (Open Web Application Security Project) är en ideell organisation som fokuserar på förbättring av säkerheten för webbapplikationer. 
+Dess primära uppdrag är att identifiera och sprida medvetenhet om de mest kritiska säkerhetsriskerna i webbapplikationer. 
+OWASP tillhandahåller resurser, verktyg och riktlinjer för att hjälpa organisationer att bygga och underhålla säkra webbapplikationer.
 
 1. Explain the concept of "Injection". Provide an example of how an injection attack could compromise a web application's security.
+Svar:
+Injektion innebär att en angripare kan "injicera" eller infoga skadlig kod i en applikation, vilket kan leda till oönskade konsekvenser. Ett vanligt exempel är SQL-injektion, där en angripare kan infoga skadlig SQL-kod i indatafält för att manipulera en databas. Till exempel kan en angripare använda följande inmatning i ett användarnamnsfält.
+Om applikationen inte hanterar inmatningen korrekt kan detta leda till att SQL-frågan blir sant och ger angriparen obehörig åtkomst till databasen.
+
 
 1. Explain two strategies to prevent Broken Authentication vulnerabilities.
+Savr: 
+1, Använd starka autentiseringsmetoder: Se till att lösenord är komplexa och kräver regelbunden uppdatering. Implementera flerfaktorsautentisering för extra säkerhet.
+2, Säkerhantera sessioner: Se till att sessionstoken är unika, slumpmässiga och har en kort giltighetstid. Använd säkra protokoll som HTTPS för att skydda sessionstrafik.
+
 
 1. Describe the potential consequences of Insecure Deserialization in web applications. How can developers protect against such attacks?
+Svar: 
+Osäker avserialisering kan leda till att en angripare manipulerar serialiserade data och exekverar skadlig kod. Konsekvenserna kan vara otillåten åtkomst, dataförändring eller denial-of-service. Utvecklare kan skydda sig genom att använda säkra serialiseringsformat, validera och sanera inkommande data, och undvika att deserialisera opålitlig data
 
 1. Briefly define Cross-Site Scripting (XSS) as outlined in the article and list two methods suggested in the article to prevent XSS attacks in web applications.
+Svar:
+Cross-Site Scripting (XSS) innebär att angripare injicerar skadlig kod (oftast JavaScript) i webbsidor som andra användare sedan kör i sina webbläsare. 
+Två förebyggande åtgärder är:
+1, Input validation och output escaping: Validera och sanera all indata och escapar (konvertera till säkra format) all utdata för att förhindra att skadlig kod injiceras.
+2, Content Security Policy (CSP): Implementera en CSP-header i webbapplikationens svar för att begränsa vilka resurser som kan köras och varifrån. 
+Det kan förhindra att oönskad skadlig kod exekveras.
 
 #### For UXF - WCAG
 
@@ -47,14 +67,30 @@ Give answers in swedish to the following questions in a text-file in your repo:
 Give answers in swedish to the following questions in a text-file in your repo:
 
 1. Explain the importance of semantic elements in web development according to accessibility guidelines. Provide examples of at least two semantic HTML elements and clarify how they enhance accessibility for users with disabilities.
+Svar: 
+Semantiska HTML-element ger mening och struktur åt webbsidan, vilket är avgörande för tillgänglighet. Två exempel på semantiska element är:
+nav> (Navigeringselement): Det indikerar att det innehåller navigationslänkar. Det hjälper användare med funktionshinder att hitta och navigera genom viktig webbinformation.
+article> (Artikelelement): Det används för att definiera innehåll som är självständigt och kan vara en del av en större webbsida eller ensamstående. Skärmläsare kan använda detta för att direkt hoppa till huvudinnehållet, vilket underlättar för användare med synnedsättning.
+
 
 2. Describe the significance of color contrast in web design concerning accessibility. How does adhering to color contrast guidelines benefit users with visual impairments, and what are the recommended contrast ratios as per WCAG standards?
+Savr:
+Färgkontrast är avgörande för användare med synnedsättningar. WCAG (Web Content Accessibility Guidelines) rekommenderar ett kontrastförhållande på minst 4.5:1 för normal text och 3:1 för större text. Genom att följa dessa riktlinjer blir texten tydligare och lättare att läsa för personer med synnedsättningar, vilket förbättrar tillgängligheten.
+
 
 3. Discuss the role of alternative text (alt text) for images in accordance with accessibility guidelines. Why is it crucial to include descriptive alt text, and how does this contribute to making web content more accessible? Provide examples to illustrate your explanation.
+Svar:
+Alternativ text (alt text) ger en textbeskrivning av en bild och är avgörande för tillgänglighet. Det hjälper användare med synnedsättningar förstå innehållet och syftet med bilden. Till exempel, om det finns en bild av en hund, kan alternativ text vara "En glad golden retriever leker i parken." Det gör webbinnehållet mer tillgängligt genom att ge meningsfull information till de som inte kan se bilden.
 
 4. Explain the purpose of landmarks in creating accessible web content. How do landmarks aid in navigation for users of assistive technologies, and can you provide examples of commonly used landmark elements in HTML?
+Svar: 
+Landmärken som header>, nav>, main>, aside>, footer>, etc., ger struktur åt sidan och underlättar navigering för användare med hjälpmedel som skärmläsare. Till exempel kan en användare hoppa direkt till huvudinnehållet genom att använda landmärket main>. Dessa landmärken gör sidan mer användbar för personer med funktionshinder.
+
 
 5. Describe the significance of proper form labeling. Why is it important to label form elements, and what strategies can developers implement to ensure effective labeling for improved accessibility?
+Svar:
+Att märka formulärelement korrekt hjälper användare, inklusive de med funktionshinder, att förstå och använda formulär på ett effektivt sätt. Användningen av element som label>, input>, textarea>, etc., med korrekt koppling och attribut som for och id, underlättar för skärmläsare att ge användarna relevant information och att navigera genom formuläret. Detta bidrar till en bättre användarupplevelse och ökad tillgänglighet.
+
 
 ## GitHub
 
